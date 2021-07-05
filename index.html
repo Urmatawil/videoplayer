@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="./js/index.js" defer></script>
+		<title>Video Player</title>
+	</head>
+	<body>
+		<section class="wrapper">
+			<div class="videoplayer">
+				<h2 class="video-title">Wild ocean</h2>
+				<video
+					id="video"
+					poster="./images/poster.jpg"
+					preload="metadata"
+					src="https://filesamples.com/samples/video/mp4/sample_960x400_ocean_with_audio.mp4"
+				></video>
+				<div class="buttons-player">
+					<button
+						id="backward"
+						aria-label="retroceder 10 segundos"
+						title="retroceder 10 segundos"
+					></button>
+					<button
+						id="play"
+						aria-label="Reproducir video"
+						title="Reproducir video"
+					></button>
+					<button
+						id="pause"
+						hidden
+						aria-label="Pausar video"
+						title="Pausar video"
+					></button>
+					<button
+						id="forward"
+						aria-label="avanzar 10 segundos"
+						title="avanzar 10 segundos"
+					></button>
+					<button id="loop" aria-label="repetir" title="repetir"></button>
+					<button id="mute" aria-label="silenciar" title="silenciar"></button>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

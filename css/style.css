@@ -1,0 +1,21 @@
+@import "./button.css";
+@import "./video-player.css";
+
+:root {
+	--gradient: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+	--font-color: #eee;
+}
+
+* {
+	transition: all 0.4s;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: var(--font-color);
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background: var(--gradient);
+	min-block-size: 100vh;
+}
