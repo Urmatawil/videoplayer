@@ -11,37 +11,56 @@
 	<body>
 		<section class="wrapper">
 			<div class="videoplayer">
-				<h2 class="video-title">Wild ocean</h2>
 				<video
 					id="video"
 					poster="./images/poster.jpg"
 					preload="metadata"
 					src="https://filesamples.com/samples/video/mp4/sample_960x400_ocean_with_audio.mp4"
 				></video>
-				<div class="buttons-player">
-					<button
-						id="backward"
-						aria-label="retroceder 10 segundos"
-						title="retroceder 10 segundos"
-					></button>
-					<button
-						id="play"
-						aria-label="Reproducir video"
-						title="Reproducir video"
-					></button>
-					<button
-						id="pause"
-						hidden
-						aria-label="Pausar video"
-						title="Pausar video"
-					></button>
-					<button
-						id="forward"
-						aria-label="avanzar 10 segundos"
-						title="avanzar 10 segundos"
-					></button>
-					<button id="loop" aria-label="repetir" title="repetir"></button>
-					<button id="mute" aria-label="silenciar" title="silenciar"></button>
+				<div class="overlay">
+					<h2 class="video-title">Wild ocean</h2>
+					<div class="buttons-player">
+						<button
+							id="backward"
+							aria-label="retroceder 10 segundos"
+							title="retroceder 10 segundos"
+						></button>
+						<button
+							id="play"
+							aria-label="Reproducir video"
+							title="Reproducir video"
+						></button>
+						<button
+							id="pause"
+							hidden
+							aria-label="Pausar video"
+							title="Pausar video"
+						></button>
+						<button
+							id="forward"
+							aria-label="avanzar 10 segundos"
+							title="avanzar 10 segundos"
+						></button>
+					</div>
+					<div class="buttons-options">
+						<button id="loop" aria-label="repetir" title="repetir"></button>
+						<button
+							class="audio"
+							id="mute"
+							aria-label="silenciar"
+							title="silenciar"
+						></button>
+						<button
+							class="audio"
+							id="unmute"
+							hidden
+							aria-label="sonido"
+							title="sonido"
+						></button>
+					</div>
+					<div class="progress-bar">
+						<input type="range" name="" id="progress-bar" min="0" value="0" />
+					</div>
 				</div>
 			</div>
 		</section>

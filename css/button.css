@@ -33,5 +33,9 @@ button:active {
 }
 
 #mute {
-	background-image: url("../images/volume-mute.svg");
+	background-image: url("../images/mute.svg");
+}
+
+#unmute {
+	background-image: url("../images/unmute.svg");
 }

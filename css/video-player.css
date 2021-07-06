@@ -1,8 +1,59 @@
 .wrapper {
-	max-inline-size: 900px;
+	max-inline-size: 640px;
 	margin: auto;
 }
 
 .videoplayer video {
 	inline-size: 100%;
+	vertical-align: middle;
+	object-fit: cover;
+}
+
+.videoplayer {
+	margin-block-start: 4%;
+	position: relative;
+}
+
+.video-title {
+	position: absolute;
+	inset-block-start: 5%;
+	inset-inline-start: 2%;
+	margin: 0;
+}
+
+.buttons-player {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.buttons-options {
+	position: absolute;
+	inset-block-start: 5%;
+	inset-inline-end: 2%;
+}
+
+.progress-bar {
+	position: absolute;
+	inset-block-end: 0;
+	inset-inline: 0;
+	display: flex;
+	padding-inline: 1%;
+}
+
+.progress-bar input {
+	flex: 1;
+}
+
+.overlay {
+	position: absolute;
+	inset: 0;
+	opacity: 0;
+}
+
+.overlay:hover {
+	opacity: 1;
 }
